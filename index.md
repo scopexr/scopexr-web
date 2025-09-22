@@ -3,12 +3,11 @@ title: ScopeXR
 layout: none
 ---
 
-<div style="padding-top:100px; text-align:center;">
+<div style="padding-top:100px; text-align:center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
 
   <img src="/assets/app-icon.png" 
        alt="ScopeXR app icon" 
-       width="256" height="256"
-       style="box-shadow: 0 4px 12px rgba(0,0,0,0.2); border-radius: 20px;" />
+       width="256" height="256" />
 
   <h1 style="margin-top:20px; font-size:2.5em;">Coming Soon</h1>
 
