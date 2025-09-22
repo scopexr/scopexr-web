@@ -3,9 +3,9 @@ title: ScopeXR
 layout: none
 ---
 
-<div style="padding-top:200px; text-align:center;">
+<div style="padding-top:100px; text-align:center;">
 
-  <img src="/assets/app-icon.png" alt="ScopeXR app icon" width="180" height="180" />
+  <img src="/assets/app-icon.png" alt="ScopeXR app icon" width="256" height="256" />
 
   <h1 style="margin-top:20px; font-size:2.5em;">Coming Soon</h1>
 
