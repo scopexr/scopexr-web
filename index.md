@@ -12,7 +12,10 @@ layout: none
   <h1 style="margin-top:20px; font-size:2.5em;">Coming Soon</h1>
 
   <p style="font-size:1.2em; color:#555;">
-    We’re building something special. Stay tuned.
+    A new way to visualize surgery is coming soon. Stay tuned.
   </p>
-
+  
+  <p style="margin-top:20px; font-size:1em;">
+    Contact us at <a href="mailto:support@scopexr.com" style="color:#0066cc; text-decoration:none;">support@scopexr.com</a>
+  </p>
 </div>
