@@ -9,10 +9,8 @@ layout: none
        alt="ScopeXR app icon" 
        width="256" height="256" />
 
-  <h1 style="margin-top:20px; font-size:2.5em;">Coming Soon</h1>
-
   <p style="font-size:1.2em; color:#555;">
-    A new way to visualize surgery is coming soon. Stay tuned.
+    A new way to visualize surgery.
   </p>
   
   <p style="margin-top:20px; font-size:1em;">
