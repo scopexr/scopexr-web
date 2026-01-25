@@ -16,4 +16,7 @@ layout: none
   <p style="margin-top:20px; font-size:1em;">
     Contact us at <a href="mailto:support@scopexr.com" style="color:#0066cc; text-decoration:none;">support@scopexr.com</a>
   </p>
+
+  <a href="/privacy">Privacy Policy</a> - <a href="/terms">Terms of Service</a>
 </div>
+
