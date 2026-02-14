@@ -2,6 +2,13 @@
 title: ScopeXR
 layout: none
 ---
+<head>
+  <meta property="og:title" content="A new way to visualize surgery" />
+  <meta property="og:image" content="/assets/app-icon.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://scopexr.com/" />
+  <meta property="og:description" content="A new way to visualize surgery" />
+</head>
 
 <div style="padding-top:100px; text-align:center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
 
