@@ -5,10 +5,10 @@ layout: none
 
 <div style="padding-top:100px; text-align:center; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">
   <h1 style="margin-bottom: 10px;">Privacy Policy for ScopeXR</h1>
-  <p style="color:#555; margin-top:0;">Effective Date: 1/25/26</p>
+  <p style="color:#555; margin-top:0;">Effective Date: 6/14/26</p>
 
   <div style="max-width: 800px; margin: 0 auto; text-align: left; line-height: 1.6; font-size: 1rem; color: #333;">
-    <p>ScopeXR Inc. (“ScopeXR,” “we,” “us,” or “our”) operates the ScopeXR application (the “App”) for visionOS, distributed via Apple’s public App Store. This Privacy Policy describes how information is handled when you use the App.</p>
+    <p>ScopeXR Inc. (“ScopeXR,” “we,” “us,” or “our”) operates the ScopeXR application (the “App”) for visionOS and the scopexr.com website (the “Website”). This Privacy Policy describes how information is handled when you use the App or visit the Website.</p>
 
     <hr style="margin: 24px 0; border: none; border-top: 1px solid #eee;" />
 
@@ -48,12 +48,13 @@ layout: none
 
     <h3>TelemetryDeck (Analytics)</h3>
     <ul>
-      <li>Used for aggregated usage and performance metrics</li>
+      <li>Used for aggregated App usage, Website page-view, and performance metrics</li>
       <li>Configured in <strong>anonymous mode</strong></li>
       <li>No user accounts or persistent identifiers</li>
       <li>No user-entered content collected</li>
       <li>Technical metadata such as filenames and USB device identifiers may be logged for diagnostics only</li>
     </ul>
+    <p>On the Website, TelemetryDeck may process the page URL, referring URL, campaign parameters, approximate country or region, browser type, operating system, device category, and related technical metadata. TelemetryDeck does not use cookies or fingerprinting. It derives a privacy-preserving identifier from the IP address, user agent, App ID, and a daily changing salt; the resulting identifier cannot recognize a visitor across different days.</p>
 
     <h3>Sentry (Error and Event Logging)</h3>
     <ul>
