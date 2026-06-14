@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="theme-color" content="#f5f5f7">
+    <title>Contact ScopeXR | Clinical collaboration</title>
+    <meta name="description" content="Contact ScopeXR about clinical collaboration, institutional access, research, and digital microscope workflows.">
+    <script
+      src="https://cdn.telemetrydeck.com/websdk/telemetrydeck.min.js"
+      data-app-id="31E41C24-6D03-4B71-98A6-127157CB85A0"
+      data-is-test-mode="true"
+    ></script>
+    <link rel="icon" href="assets/app-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="ScopeXR staging home">
+        <img src="assets/app-icon.png" alt="" width="40" height="40">
+        <span>ScopeXR</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#platform">Platform</a>
+        <a class="nav-contact" href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main class="contact-main section-pad">
+      <div class="contact-intro">
+        <p class="eyebrow">Clinical and institutional inquiries</p>
+        <h1>Let’s understand<br>your workflow.</h1>
+        <p>
+          Tell us about your institution, clinical setting, and digital microscope
+          environment. ScopeXR access is coordinated directly with qualified clinical
+          and research partners.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <form class="contact-form" id="contact-form">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Professional email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="phone">Phone <span class="form-help">(optional)</span></label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+
+          <div class="form-field">
+            <label for="preferred-contact">Preferred contact</label>
+            <select id="preferred-contact" name="preferredContact">
+              <option value="Email">Email</option>
+              <option value="Phone">Phone</option>
+              <option value="Either">Either</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="institution">Institution or organization</label>
+            <input id="institution" name="institution" autocomplete="organization" required>
+          </div>
+
+          <div class="form-field">
+            <label for="role">Role or title</label>
+            <input id="role" name="role" autocomplete="organization-title" required>
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="location">Location</label>
+            <input id="location" name="location" autocomplete="address-level2" placeholder="City, state or region, country">
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="microscope">Digital microscope or video system <span class="form-help">(optional)</span></label>
+            <input id="microscope" name="microscope" placeholder="Manufacturer and model, if known">
+          </div>
+
+          <div class="form-field form-field-wide">
+            <label for="description">How would you like to use ScopeXR?</label>
+            <textarea id="description" name="description" required placeholder="Describe the clinical, educational, research, or collaboration workflow you are exploring."></textarea>
+          </div>
+
+          <p class="form-privacy">
+            Please do not include patient names, images, medical record numbers, health
+            information, or other confidential clinical data in this form.
+          </p>
+
+          <div class="form-actions">
+            <button class="button" type="submit">Prepare email</button>
+            <p class="form-status" id="form-status">Your email application will open for review before sending.</p>
+          </div>
+        </form>
+
+        <aside class="contact-aside">
+          <h2>Prefer direct email?</h2>
+          <p>
+            Write to <a href="mailto:support@scopexr.com">support@scopexr.com</a>.
+            Please include your institution, role, and a short description of the
+            workflow you want to explore.
+          </p>
+          <p>
+            ScopeXR is currently coordinated through controlled clinical and research
+            access rather than open enrollment.
+          </p>
+        </aside>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-brand">ScopeXR</div>
+      <div class="footer-links">
+        <a href="https://scopexr.com/privacy">Privacy Policy</a>
+        <a href="https://scopexr.com/terms">Terms of Service</a>
+      </div>
+      <p>&copy; 2026 ScopeXR. All rights reserved.</p>
+      <p class="legal-note">
+        Apple, Apple Vision Pro, and visionOS are trademarks of Apple Inc., registered
+        in the U.S. and other countries and regions. ScopeXR is independent and is not
+        affiliated with or endorsed by Apple Inc.
+      </p>
+    </footer>
+
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const data = new FormData(event.currentTarget);
+        const subject = `ScopeXR inquiry — ${data.get("institution")}`;
+        const body = [
+          `Name: ${data.get("name")}`,
+          `Professional email: ${data.get("email")}`,
+          `Phone: ${data.get("phone") || "Not provided"}`,
+          `Preferred contact: ${data.get("preferredContact")}`,
+          `Institution: ${data.get("institution")}`,
+          `Role or title: ${data.get("role")}`,
+          `Location: ${data.get("location") || "Not provided"}`,
+          `Digital microscope or video system: ${data.get("microscope") || "Not provided"}`,
+          "",
+          "Workflow description:",
+          data.get("description")
+        ].join("\n");
+
+        window.location.href = `mailto:support@scopexr.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      });
+    </script>
+  </body>
+</html>
