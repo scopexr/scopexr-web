@@ -112,12 +112,12 @@ nav a:hover,
 
 .hero-art {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: min(92vw, 1180px);
-  height: auto;
-  transform: translate(-50%, -47%);
-  opacity: 0.72;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.78;
 }
 
 .hero-content {
@@ -146,7 +146,7 @@ h1 {
   margin-bottom: 30px;
   font-size: clamp(56px, 8vw, 102px);
   font-weight: 700;
-  letter-spacing: -0.065em;
+  letter-spacing: -0.045em;
   line-height: 0.95;
 }
 
@@ -328,8 +328,7 @@ footer p {
   }
 
   .hero-art {
-    width: max(760px, 150vw);
-    transform: translate(-50%, -50%);
+    object-position: center;
     opacity: 0.62;
   }
 
