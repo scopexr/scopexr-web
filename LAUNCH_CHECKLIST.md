@@ -16,8 +16,9 @@ On 2026-06-26 the `staging/` redesign was promoted to the site root:
 
 ## Open follow-ups
 
-- [ ] **Restyle the legal pages.** `privacy.md` and `terms.md` still render with the
-      Jekyll **minima** theme and do not match the new frosted-glass design. Redesign
-      them (and confirm `404.html`, which is self-styled, still feels on-brand).
+- [x] **Restyle the legal pages.** `privacy.md` / `terms.md` converted to standalone
+      `privacy.html` / `terms.html` that share the site header/footer and a frosted
+      "document card" matching the new design. Legal text preserved verbatim.
+- [ ] Confirm `404.html` (self-styled) still feels on-brand against the new design.
 - [ ] Consider a `sitemap.xml` + reference it from `robots.txt`.
 - [ ] Consider pretty URLs (e.g. `/contact` instead of `/contact.html`).
