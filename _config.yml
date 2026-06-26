@@ -1,2 +1,4 @@
 title: ScopeXR
 theme: minima
+exclude:
+  - LAUNCH_CHECKLIST.md
