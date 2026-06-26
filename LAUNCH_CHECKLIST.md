@@ -1,33 +1,23 @@
-# Staging → Production launch checklist
-
-Note to self. The `staging/` pages are intentionally hidden from search
-engines while in development. When promoting them to the live site, the
-crawl/index protections must be removed AND the URLs corrected, or the
-launched pages will either stay invisible to Google or point search
-engines at the wrong (staging) location.
+# Launch notes & follow-ups
 
 This file is excluded from the published site via `_config.yml` (`exclude`).
 
-## Remove the crawl/index blocks
+## Launched (staging → production)
 
-- [ ] `staging/index.html` line ~6: remove `<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">` (or change to `index, follow`).
-- [ ] `staging/contact.html` line ~6: remove `<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">`.
-- [ ] `robots.txt`: remove `Disallow: /staging/` (and confirm nothing else blocks the new live paths).
+On 2026-06-26 the `staging/` redesign was promoted to the site root:
 
-## Fix the URLs (currently point at `/staging/`)
+- [x] Moved `index.html`, `contact.html`, `styles.css` to root; removed the old
+      placeholder `index.md`.
+- [x] Consolidated images into `assets/images/` (was `provisional/` + `rights-review/`).
+- [x] Removed `noindex, nofollow` robots metas from `index.html` / `contact.html`.
+- [x] Repointed canonical + `og:url` from `/staging/` to live paths (`/`, `/contact.html`).
+- [x] `robots.txt`: removed `Disallow: /staging/` (site open to crawlers).
+- [x] TelemetryDeck `data-is-test-mode` set to `false` on both pages.
 
-These were set for the staging location and must move to the final production paths.
+## Open follow-ups
 
-- [ ] `staging/index.html`: `<link rel="canonical">` and `og:url` → final URL (e.g. `https://scopexr.com/`).
-- [ ] `staging/contact.html`: `<link rel="canonical">` and `og:url` → final URL (e.g. `https://scopexr.com/contact.html`).
-- [ ] If the pages move out of `staging/`, update relative asset/links and the `og:image` paths accordingly.
-
-## Analytics
-
-- [ ] TelemetryDeck script in both pages has `data-is-test-mode="true"` — set to `false` (or remove the attribute) for production traffic.
-
-## Verify after launch
-
-- [ ] Confirm pages return `index, follow` and are reachable (not Disallowed).
-- [ ] Re-test Open Graph / Twitter cards and JSON-LD (e.g. Google Rich Results Test) on the live URLs.
-- [ ] Submit/refresh sitemap if one exists.
+- [ ] **Restyle the legal pages.** `privacy.md` and `terms.md` still render with the
+      Jekyll **minima** theme and do not match the new frosted-glass design. Redesign
+      them (and confirm `404.html`, which is self-styled, still feels on-brand).
+- [ ] Consider a `sitemap.xml` + reference it from `robots.txt`.
+- [ ] Consider pretty URLs (e.g. `/contact` instead of `/contact.html`).
